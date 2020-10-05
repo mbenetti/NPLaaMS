@@ -145,7 +145,7 @@ The users can also directly use the backend fastapi server to have a command lin
 ### Demonstration
 
 <p align="center">
-<img alt="Project Insight Demo" src="meta/demo.gif">
+<img alt="Project Demo" src="meta/demo.gif">
 </p>
 
 ### How to Add a new Model
