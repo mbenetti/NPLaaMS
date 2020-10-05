@@ -1,5 +1,5 @@
 
-<h2 align="center">NLP as a Service</h2>
+<h2 align="center">NLP as a Microservice</h2>
 
 <p align="center">
 <img alt="NLPaaMim" src="meta/Imagen10.png" >
