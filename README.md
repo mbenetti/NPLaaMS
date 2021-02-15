@@ -147,7 +147,7 @@ The users can also directly use the backend fastapi server to have a command lin
 Architecture:
 
 <p align="center">
-<img alt="Project Demo" src="meta/arch.jpg">
+<img alt="Project Demo" src="meta/arch.PNG">
 </p>
 
 <p align="center">
