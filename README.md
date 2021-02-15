@@ -144,6 +144,12 @@ The users can also directly use the backend fastapi server to have a command lin
 
 ### Demonstration
 
+Architecture:
+
+<p align="center">
+<img alt="Project Demo" src="meta/arch.jpg">
+</p>
+
 <p align="center">
 <img alt="Project Demo" src="meta/demo.gif">
 </p>
