@@ -34,8 +34,6 @@ The downstream NLP tasks covered:
 
 * Summarization
 
-* Information Extraction `To Do`
-
 The user can select different models from the drop down to run the inference.
 
 The users can also directly use the backend fastapi server to have a command line inference. 
