@@ -91,7 +91,7 @@ The users can also directly use the backend fastapi server to have a command lin
     - Run the app with the streamlit run command
     ```console  
     $ cd src_streamlit
-    src_streamlit:~$ streamlit run NLPfily.py
+    src_streamlit:~$ streamlit run NLPfiy.py
     ```
 
 4. **Access to Fastapi Documentation**: Since this is a microservice based design, every NLP task has its own seperate documentation
