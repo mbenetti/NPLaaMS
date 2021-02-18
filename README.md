@@ -40,7 +40,7 @@ The users can also directly use the backend fastapi server to have a command lin
 
 <a id='section01a'></a>
 
-### Features of the solution
+### Advantages of this solution
 
 * **Python Code Base**: Built using `Fastapi` and `Streamlit` making the complete code base in Python.
 * **Expandable**: The backend is desinged in a way that it can be expanded with more Transformer based models and it will be available in the front end app automatically. 
@@ -77,19 +77,21 @@ The users can also directly use the backend fastapi server to have a command lin
      - Go to the `src_streamlit` folder
  
     - Create the docker image from the `Docker File`
-    - Then execute the docker image to spin up a container.
+    - Then execute the docker image in the same network of the stack.
    
     ```
     $ cd src_streamlit
     src_streamlit:~$ sudo docker build -t streamlit_app .
     src_streamlit:~$ docker run --network=src_fastapi_default -p 127.0.0.1:8501:8501 -d --name streamlit_app streamlit_app
     ```
-    --->
-    - Run the app with the streamlit run command
+    
+    - Run the app with the streamlit on your system
     ```
     $ cd src_streamlit
+    src_streamlit:~$ pip install -r requirements.txt
     src_streamlit:~$ streamlit run NLPfiy.py
     ```
+
 
 4. **Access to Fastapi Documentation**: Since this is a microservice based design, every NLP task has its own seperate documentation
     - News Classification: http://localhost:8080/api/v1/classification/docs
