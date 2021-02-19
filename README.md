@@ -1,9 +1,10 @@
-
 <h2 align="center">NLP as a Service</h2>
 
 <p align="center">
-<img alt="NLP aa Microservice" src="meta/Imagen10.png" >
+<img alt="Project Insight" src="meta/Insight.png">
 </p>
+
+
 
 ## Contents
 
@@ -22,7 +23,7 @@
 
 ## Introduction
 
-This project is designed to create NLP as a service with code base for both front end GUI (**`streamlit`**)  and backend server (**`FastApi`**) the usage of transformers models on various downstream NLP task.
+Project Insight is designed to create NLP as a service with code base for both front end GUI (**`streamlit`**)  and backend server (**`FastApi`**) the usage of transformers models on various downstream NLP task.
 
 The downstream NLP tasks covered:
 
@@ -34,13 +35,15 @@ The downstream NLP tasks covered:
 
 * Summarization
 
+* Information Extraction `To Do`
+
 The user can select different models from the drop down to run the inference.
 
 The users can also directly use the backend fastapi server to have a command line inference. 
 
 <a id='section01a'></a>
 
-### Advantages of this solution
+### Features of the solution
 
 * **Python Code Base**: Built using `Fastapi` and `Streamlit` making the complete code base in Python.
 * **Expandable**: The backend is desinged in a way that it can be expanded with more Transformer based models and it will be available in the front end app automatically. 
@@ -74,24 +77,25 @@ The users can also directly use the backend fastapi server to have a command lin
     ```
 
 3. **Running the frontend app.**
-     - Go to the `src_streamlit` folder
- 
+    <!---
+    - Front end is a **`WIP`** as a change in the backend architecture.
+    - Should be up in a few days.
+    --->
+    - Go to the `src_streamlit` folder
+    <!---
     - Create the docker image from the `Docker File`
-    - Then execute the docker image in the same network of the stack.
-   
-    ```
+    - Then execute the docker image to spin up a container.
+    ```console  
     $ cd src_streamlit
     src_streamlit:~$ sudo docker build -t streamlit_app .
-    src_streamlit:~$ docker run --network=src_fastapi_default -p 127.0.0.1:8501:8501 -d --name streamlit_app streamlit_app
+    src_streamlit:~$ sudo docker run -d --name streamlit_app streamlit_app
     ```
-    
-    - Run the app with the streamlit on your system
-    ```
+    --->
+    - Run the app with the streamlit run command
+    ```console  
     $ cd src_streamlit
-    src_streamlit:~$ pip install -r requirements.txt
-    src_streamlit:~$ streamlit run NLPfiy.py
+    src_streamlit:~$ streamlit run NLPfily.py
     ```
-
 
 4. **Access to Fastapi Documentation**: Since this is a microservice based design, every NLP task has its own seperate documentation
     - News Classification: http://localhost:8080/api/v1/classification/docs
@@ -105,6 +109,12 @@ The users can also directly use the backend fastapi server to have a command lin
 ## Project Details
 
 <a id='section03a'></a>
+
+### Demonstration
+
+<p align="center">
+<img alt="Project Insight Demo" src="meta/streamlit-NLPfiy.gif">
+</p>
 
 <a id='section03b'></a>
 
@@ -138,18 +148,6 @@ The users can also directly use the backend fastapi server to have a command lin
     * `config.json`: This file contains the details of the models in the backend and the dataset they are trained on.
 
 <a id='section03c'></a>
-
-### Demonstration
-
-Architecture:
-
-<p align="center">
-<img alt="Project Demo" src="meta/arch.PNG">
-</p>
-
-<p align="center">
-<img alt="Project Demo" src="meta/demo.gif">
-</p>
 
 ### How to Add a new Model
 
@@ -194,10 +192,4 @@ Architecture:
 
 ## License
 
-Images from https://pixabay.com (Free for commercial use, No attribution required )
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+This project is licensed under the GPL-3.0 License - see the [LICENSE.md](https://github.com/abhimishra91/insight/blob/master/LICENSE) file for details
