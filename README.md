@@ -35,7 +35,6 @@ The downstream NLP tasks covered:
 
 * Summarization
 
-* Information Extraction `To Do`
 
 The user can select different models from the drop down to run the inference.
 
@@ -113,7 +112,7 @@ The users can also directly use the backend fastapi server to have a command lin
 ### Demonstration
 
 <p align="center">
-<img alt="Project Insight Demo" src="meta/streamlit-NLPfiy.gif">
+<img alt="Project Insight Demo" src="meta/demo.gif">
 </p>
 
 <a id='section03b'></a>
