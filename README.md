@@ -1,7 +1,7 @@
 <h2 align="center">NLP as a Service</h2>
 
 <p align="center">
-<img alt="Project" src="meta/Image10.png">
+<img alt="Project" src="meta/Imagen10.png">
 </p>
 
 
