@@ -20,4 +20,4 @@ COPY . /src_streamlit
 EXPOSE 8501
 
 # Running the streamlit service
-CMD ["streamlit", "run", "NLPfiy.py"]
+CMD ["streamlit", "run", "menu.py"]
