@@ -109,7 +109,7 @@ The users can also directly use the backend fastapi server to have a command lin
 ### Demonstration
 
 <p align="center">
-<img alt="Project demo" src="meta/arch.png">
+<img alt="Project demo" src="meta/arch.PNG">
 </p>
 
 <p align="center">
