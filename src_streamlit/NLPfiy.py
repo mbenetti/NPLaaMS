@@ -45,7 +45,7 @@ class MakeCalls:
 
 class Display:
     def __init__(self):
-        st.title("NPLaaMS")
+        st.title("NLPaaMS")
         st.sidebar.header("Select the NLP Service")
         self.service_options = st.sidebar.selectbox(
             label="",
@@ -106,13 +106,13 @@ def main():
             "The users can leverage fine-tuned language models to perform multiple downstream tasks, via GUI and API access."
         )
         st.write(
-            "Insight backed in designed in a way that developers can also add-in their own fine-tuned models on different datasets and use them for prediction."
+            "This backed is designed in a way that developers can also add-in their own models trained on different datasets and use them too for prediction."
         )
         st.write(
-            "To use this solution, select a service from the dropdown in the side bar. Details of pre-loaded  pre-trained model will be available based on the service."
+            "Select a service from the dropdown in the side bar. Details of pre-loaded  pre-trained model will be available based on the service."
         )
         st.write(
-            "Fill in the text on which you want to run the service and then let the magic happen."
+            "Fill in the text on which you want to run the service."
         )
     else:
         model_details = apicall.model_list(service=service)
