@@ -70,9 +70,11 @@ The users can also directly use the backend fastapi server to have a command lin
     - Go to the `src_fastapi` folder
     - Run the `Docker Compose` comnand
 
-    ```console  
+    ```
+    
     $ cd src_fastapi
     src_fastapi:~$ sudo docker-compose up -d
+    
     ```
 
 3. **Running the frontend app.**
@@ -81,16 +83,19 @@ The users can also directly use the backend fastapi server to have a command lin
     
     - Create the docker image from the `Docker File`
     - Then execute the docker image to spin up a container.
-    ```console  
+    - 
+    ```
     $ cd src_streamlit
     src_streamlit:~$ sudo docker build -t streamlit_app .
-    src_streamlit:~$ sudo docker run -d --name streamlit_app streamlit_app
+    src_streamlit:~$ sudo docker run -d -p 8501:8501 --network=src_fastapi_default --name streamlit_app streamlit_app
+    
     ```
  
     - Run the app with the streamlit run command
-    ```console  
+    ``` 
     $ cd src_streamlit
     src_streamlit:~$ streamlit run NLPfily.py
+    
     ```
 
 4. **Access to Fastapi Documentation**: Since this is a microservice based design, every NLP task has its own seperate documentation
